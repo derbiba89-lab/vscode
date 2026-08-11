@@ -4,7 +4,7 @@
 # ClipboardEvent('paste') with a DataTransfer payload — no system
 # clipboard involved, so safe to use against multiple parallel Code OSS
 # instances (each subagent's @playwright/cli attaches to its own CDP).
-#
+# 
 # Why this exists: VS Code Monaco's `native-edit-context` element doesn't
 # react to `@playwright/cli`'s `fill` or `type`. The pbcopy+press alternative
 # works for one instance but `pbcopy` writes the system-wide NSPasteboard,
